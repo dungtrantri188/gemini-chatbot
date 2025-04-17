@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gemini Chatbot</title>
+</head>
+<body>
+    <h2>Gemini Chatbot</h2>
+    <form method="post">
+        <textarea name="prompt" rows="4" cols="50" placeholder="Nhập tin nhắn..."></textarea><br>
+        <button type="submit">Gửi</button>
+    </form>
+    {% if response %}
+        <h3>Phản hồi từ Gemini:</h3>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
